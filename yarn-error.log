@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Python.framework/Versions/3.4/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin
+
+Yarn version: 
+  1.0.2
+
+Node version: 
+  8.9.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "typeorm-typescript-example",
+    "version": "0.0.1",
+    "description": "Example how to use TypeORM with TypeScript.",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "author": {
+      "name": "Umed Khudoiberdiev",
+      "email": "pleerock.me@gmail.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/typeorm/typescript-example.git"
+    },
+    "bugs": {
+      "url": "https://github.com/typeorm/typescript-example/issues"
+    },
+    "tags": [
+      "orm",
+      "typescript",
+      "typescript-orm",
+      "typeorm-sample",
+      "typeorm-example"
+    ],
+    "devDependencies": {
+      "typescript": "^2.1.5"
+    },
+    "dependencies": {
+      "@types/node": "^8.0.29",
+      "mysql": "^2.14.1",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "^0.1.0"
+    },
+    "scripts": {
+      "start": "tsc && node src/index.js",
+      "typeorm": "./node_modules/.bin/typeorm -v"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/string_decoder: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:118034:19)
+      at ontimeout (timers.js:475:11)
+      at tryOnTimeout (timers.js:310:5)
+      at Timer.listOnTimeout (timers.js:270:5)
